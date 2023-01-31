@@ -17,3 +17,13 @@ Parameters are changed in Engine class:
  FakeClient is initiated by default to prevent data to be sent to SmartESS cloud. If you still want to use SmartESS cloud, set fakeClient to false.
  
  Project requires org.eclipse.paho.client.mqtt library.
+
+ ## Build the executable jar
+
+ Run `mvn package` to create an executable jar with bundled dependencies.
+
+ To run the compiled program use the command
+
+ ```shell
+ java -jar target/smartess-proxy-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+ ```
